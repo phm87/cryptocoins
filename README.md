@@ -32,13 +32,26 @@ La blockchain de bitcoin testnet fait plus de 12 GB, on l'utilisera au prochain 
 
 +++ commandes
 
+## Rappels
+### Fonction de hash
+
+MD5, SHA1, SHA256D, HASH160
+
+### Chifrement symétrique
+
+### Chifrement asymétrique
+
 ## Adresse (clé publique) et clé privée
-
-
+A partir d'une clé privée, je peux calculer la clé publique (pubkey) qui permet d'obtenir l'adresse bitcoin (en fonction du réseau: testnet ou mainet).
 
 ## Transactions
+
 ### Types de transactions
+Avant l'arrivée de segwit, il y avait 5 types standards de scripts de transaction: pay-to-public-key-hash (P2PKH), public-key, multi-signature (limited to 15 keys), pay-to-script-hash (P2SH), et data output (OP_RETURN).
+
 The five standard types of transaction scripts are pay-to-public-key-hash (P2PKH), public-key, multi-signature (limited to 15 keys), pay-to-script-hash (P2SH), and data output (OP_RETURN), which are described in more detail in the following sections.
+
+Avec segwit sont arrivées les transactions @@@
 
 #### Pay-to-Public-Key-Hash (P2PKH)
 The vast majority of transactions processed on the bitcoin network are P2PKH transactions. These contain a locking script that encumbers the output with a public key hash, more commonly known as a bitcoin address. Transactions that pay a bitcoin address contain P2PKH scripts. An output locked by a P2PKH script can be unlocked (spent) by presenting a public key and a digital signature created by the corresponding private key.
