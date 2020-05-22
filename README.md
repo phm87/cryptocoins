@@ -1,5 +1,7 @@
 # Meetup 1: Noeud bitcoin et transaction
-Faire tourner un noeud bitcoin regtest et faire une transaction
+Pré-requis: Il est demandé aux participants d'avoir un ordinateur linux ou windows avec plus de 16 GB de libre et une bonne connection internet. Lors de ce premier meetup, 1GB sera téléchargé.
+
+L'objectif est de faire tourner un noeud bitcoin regtest et faire des transactions (P2PKH).
 
 ## Noeud: compilation, installation et configuration
 ...
@@ -115,8 +117,11 @@ https://en.bitcoin.it/wiki/Raw_Transactions#createrawtransaction_.5B.7B.22txid.2
 Il est possible d'écrire l'hexadécimal manuellement (sans utiliser le programme bitcoin). On peut écrire sois-même le résultat de createrawtransaction. Cela demande une bonne connaissance du protocole et du détail des transactions (sujet du prochain meetup tech).
 
 
+
 # Meetup 2: Qu'est-ce qu'une adresse bitcoin, une signature et comment fonctionne une transaction?
-Il est demandé aux participants d'avoir synchronisé bitcoin sur le testnet, des transactions
+Pré-requis: Il est demandé aux participants d'avoir synchronisé bitcoin sur le testnet (blockchain de 12 GB), des bitcoins testnet seront donnés donc pas besoin d'avoir des bitcoins testnet. Les participants peuvent préparer des images, ils pourront s'échanger ces images contre les bitcoins testnet (sans valeur monétaire).
+
+L'objectif est de faire tourner un noeud bitcoin sur le réseau testnet et faire des transactions (P2PKH) entre les participants. L'exposé portera sur le détail des adresses, transactions et signatures bitcoin dans le cadre de transactions P2PKH.
 
 ## Introduction
 
@@ -126,5 +131,5 @@ Il est demandé aux participants d'avoir synchronisé bitcoin sur le testnet, de
 
 ## Calcul d'une adresse PKH (bash & openssl)
 
-## Transaction et signature bitcoin
-
+## Transaction bitcoin et signature bitcoin
+avec bitcoin, avec openssl
