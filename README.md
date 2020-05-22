@@ -93,18 +93,38 @@ https://www.oreilly.com/library/view/mastering-bitcoin/9781491902639/ch05.html
 
 
 
-## Tests
+## Faire une transaction
+### Créer une adresse
+getnewaddress "legacy"
+### Envoyer des bitcoins (P2PKH)
 
+#### sendtoaddress rpc
+sendtoaddress rpc: choix des inputs automatique
+miner des blocs sur le regtest (ou attendre que des blocs soient minées sur le testnet ou mainet)
 
+#### raw transaction rpc
+permet de sélectionner les inputs, grand risque de perdre des bitcoins si on oublie le change
+
+createrawtransaction
+signrawtransaction
+sendrawtransaction
 
 https://en.bitcoin.it/wiki/Raw_Transactions#createrawtransaction_.5B.7B.22txid.22:txid.2C.22vout.22:n.7D.2C....5D_.7Baddress:amount.2C....7D
 
+#### hex raw transaction à la main
+Il est possible d'écrire l'hexadécimal manuellement (sans utiliser le programme bitcoin). On peut écrire sois-même le résultat de createrawtransaction. Cela demande une bonne connaissance du protocole et du détail des transactions (sujet du prochain meetup tech).
 
 
-
-# Meetup 2: Qu'est-ce qu'une adresse bitcoin?
+# Meetup 2: Qu'est-ce qu'une adresse bitcoin, une signature et comment fonctionne une transaction?
+Il est demandé aux participants d'avoir synchronisé bitcoin sur le testnet, des transactions
 
 ## Introduction
+
+## Rappels
+### raw transaction rpc
+### hex raw transaction à la main
+
+## Calcul d'une adresse PKH (bash & openssl)
 
 ## Transaction et signature bitcoin
 
