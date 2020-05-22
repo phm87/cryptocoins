@@ -1,10 +1,10 @@
 # Meetup 1: Noeud bitcoin et transaction
-Pré-requis: Il est demandé aux participants d'avoir un ordinateur linux ou windows avec plus de 16 GB de libre et une bonne connection internet. Lors de ce premier meetup, 1GB sera téléchargé.
+Pré-requis: Il est demandé aux participants d'avoir un ordinateur linux ou windows avec plus de 16 GB de libre et une bonne connection internet. Lors de ce premier meetup, 1GB sera téléchargé. Pour les utilisateurs de windows, nous conseillons d'installer virtualBox, de télécharger l'image du CD (fichier iso) d'ubuntu, de créer un nouvelle machine virtuelle et d'y installer ubuntu. L'installation d'ubuntu peut prender 30 minutes. Des explications additionnelles sont données ici @@@.
 
-L'objectif est de faire tourner un noeud bitcoin regtest et faire des transactions (P2PKH).
+L'objectif est de faire tourner un noeud bitcoin regtest, de faire des transactions (P2PKH) et de comprendre (introduction) les transactions.
 
 ## Noeud: compilation, installation et configuration
-...
+
 ### VirtualBox / VMware
 La majeure partie des attaques visant les ordintaeurs des particuliers (virus et trojans) concernent le système d'exploitation Windows tandis que peu/pas de virus et menaces existent sur Linux. C'est pour cela que Linux est préféré à Windows pour les cryptomonnaies. Néanmoins, il faut veiller à se renseigner afin de correctement configurer et sécuriser son système Linux. La plupart des tutoriaux techniques sur les cryptomonnaies utilisent Linux alors que la majeure partie des internautes utilisent Windows. Des outils comme VirtualBox permettent de faire tourner une machine virtuelle sur un PC Windows qui contiendra elle-même un système Linux. Il est possible de sauvegarder l'entièreté de la machine virtuelle en copiant collant les fichiers qui la composent (après l'avoir éteinte).
 
@@ -106,7 +106,8 @@ miner des blocs sur le regtest (ou attendre que des blocs soient minées sur le 
 
 #### raw transaction rpc
 permet de sélectionner les inputs, grand risque de perdre des bitcoins si on oublie le change
-
+listunspent
+Copier coller les détails d'une UTXO dans notepad.
 createrawtransaction
 signrawtransaction
 sendrawtransaction
